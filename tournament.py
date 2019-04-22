@@ -136,7 +136,7 @@ def print_winners(groups: Dict[GroupId, List[Player]]) -> None:
         winners = groups[group_id][:3]
         headers = winners[0].keys()
         rows = [winner.values() for winner in winners]
-        print(f'==== Group:{group_id}:winners ====')
+        print(f'\n==== Group:{group_id}:winners ====')
         print(tabulate.tabulate(rows, headers))
 
 
