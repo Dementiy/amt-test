@@ -9,7 +9,7 @@ gunicorn -b localhost:8080 -w 4 backend:app &
 ```
 rq worker --url redis://localhost:6379/1
 rq worker --url redis://localhost:6379/1
-rqscheduler --host localhost --port 6379 --db 1 
+rqscheduler -i 5 --host localhost --port 6379 --db 1 
 ```
 
 Запуск клиентской части:
