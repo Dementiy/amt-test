@@ -1,7 +1,6 @@
 aiohttp==3.5.4
 async-timeout==3.0.1
 attrs==19.1.0
-bottle==0.12.16
 Cerberus==1.2
 certifi==2019.3.9
 chardet==3.0.4
