@@ -1,7 +1,16 @@
+Установка пакетов:
+
+```
+python3 -m venv amt-test
+source amt-test/bin/activate
+pip install -r requirements.txt
+wget https://bottlepy.org/bottle.py
+```
+
 Запуск сервера:
 
 ```
-gunicorn -b localhost:8080 -w 4 backend:app &
+gunicorn -b localhost:8080 -w 4 backend:app
 ```
 
 Запуск воркеров:
